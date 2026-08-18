@@ -1,0 +1,1392 @@
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202124;
+  background: #fff;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   APP
+   ========================================================= */
+
+.gmail-app {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gmail-body {
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+}
+
+.mail-area {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 18px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-left {
+  width: 240px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.icon-btn:hover {
+  background: #f1f3f4;
+}
+
+.gmail-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-left: 8px;
+  color: #5f6368;
+  font-size: 22px;
+}
+
+.gmail-m {
+  color: #ea4335;
+  font-weight: 700;
+}
+
+.search-box {
+  width: min(720px, 55vw);
+  height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  background: #f1f3f4;
+  border-radius: 24px;
+}
+
+.search-box svg {
+  color: #5f6368;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #202124;
+  font-size: 16px;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background: #7b1fa2;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  height: 100%;
+  padding: 16px 12px;
+  overflow-y: auto;
+}
+
+.compose-btn {
+  height: 56px;
+  padding: 0 20px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 18px;
+  background: #c2e7ff;
+  color: #202124;
+}
+
+.compose-btn:hover {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-item {
+  height: 40px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 0 20px 20px 0;
+  color: #202124;
+  font-size: 14px;
+}
+
+.sidebar-item:hover {
+  background: #f1f3f4;
+}
+
+.sidebar-item.active {
+  background: #d3e3fd;
+  font-weight: 700;
+}
+
+.sidebar-item svg {
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.sidebar-item strong {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.labels-title {
+  margin-top: 24px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.labels-title button {
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   MAIL LIST TOOLBAR
+   ========================================================= */
+
+.toolbar {
+  height: 52px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.toolbar button {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.toolbar button:hover {
+  background: #f1f3f4;
+}
+
+
+/* =========================================================
+   EMAIL LIST
+   ========================================================= */
+
+.email-list {
+  width: 100%;
+}
+
+.email-row {
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.email-row:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.email-checkbox,
+.star-icon {
+  flex-shrink: 0;
+  font-size: 20px !important;
+  color: #777;
+}
+
+.email-sender {
+  width: 170px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.email-content {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.email-content span {
+  color: #5f6368;
+}
+
+.email-time {
+  width: 80px;
+  flex-shrink: 0;
+  color: #5f6368;
+  font-size: 12px;
+  text-align: right;
+}
+
+
+/* =========================================================
+   CONVERSATION / READING AREA
+   ========================================================= */
+
+.conversation {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.conversation-page {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #202124;
+}
+
+
+/* =========================================================
+   CONVERSATION TOOLBAR
+   ========================================================= */
+
+.conversation-toolbar {
+  width: 100%;
+  height: 52px;
+  padding: 0 18px 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.toolbar-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.toolbar-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.toolbar-button:hover {
+  background: #f1f3f4;
+}
+
+.toolbar-button svg {
+  font-size: 21px;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 26px;
+  margin: 0 8px;
+  background: #e5e7eb;
+}
+
+
+/* =========================================================
+   CONVERSATION NAVIGATION
+   ========================================================= */
+
+.conversation-navigation {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #5f6368;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.conversation-navigation > span {
+  margin-right: 8px;
+}
+
+.navigation-button {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.navigation-button:hover {
+  background: #f1f3f4;
+}
+
+
+/* =========================================================
+   CONVERSATION CONTENT
+   ========================================================= */
+
+.conversation-content {
+  width: 100%;
+  height: calc(100% - 52px);
+  overflow-y: auto;
+  background: #fff;
+}
+
+
+/* =========================================================
+   SUBJECT
+   ========================================================= */
+
+.conversation-subject-row {
+  width: 100%;
+  padding: 24px 28px 12px;
+}
+
+.subject-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conversation-subject-row h1 {
+  margin: 0;
+  color: #202124;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.inbox-label {
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: #e8eaed;
+  color: #5f6368;
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   EMAIL MESSAGE
+   ========================================================= */
+
+.email-message {
+  width: 100%;
+  background: #fff;
+}
+
+
+/* =========================================================
+   GMAIL SENDER HEADER
+   ========================================================= */
+
+/*
+   This intentionally matches Gmail's structure:
+
+   [avatar]  User Name <email@mail.com>       Aug 15, 2026...
+             to me ▾
+*/
+
+.email-header {
+  width: 100%;
+  min-height: 76px;
+  padding: 16px 28px 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+/* ---------------------------------------------------------
+   PROFILE CIRCLE
+
+   The avatar sits directly beside the sender information.
+--------------------------------------------------------- */
+
+.sender-avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: #16a765;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* ---------------------------------------------------------
+   SENDER INFORMATION
+--------------------------------------------------------- */
+
+.sender-information {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/*
+   IMPORTANT:
+   Name + email are on the SAME LINE.
+*/
+
+.sender-name-row {
+  min-height: 21px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.sender-name {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.sender-email {
+  color: #5f6368;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+
+/* ---------------------------------------------------------
+   TO ME ROW
+--------------------------------------------------------- */
+
+.sender-email-row {
+  height: 20px;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.recipient-details {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #5f6368;
+  font-size: 12px;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.recipient-details:hover {
+  color: #202124;
+}
+
+
+/*
+   If the component doesn't contain an actual arrow icon,
+   this creates the small Gmail-style dropdown arrow.
+*/
+
+.recipient-details::after {
+  content: "▾";
+  position: relative;
+  top: -1px;
+  font-size: 11px;
+  color: #5f6368;
+}
+
+
+/* =========================================================
+   DATE / REPLY / MORE
+   ========================================================= */
+
+.email-time {
+  margin-left: 18px;
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #5f6368;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.email-time > span {
+  margin-right: 8px;
+}
+
+
+/*
+   Gmail-style date.
+*/
+
+.email-date {
+  color: #5f6368;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER ACTION BUTTONS
+--------------------------------------------------------- */
+
+.header-icon-button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.header-icon-button:hover {
+  background: #f1f3f4;
+}
+
+.header-icon-button svg {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   GMAIL MESSAGE BODY
+   ========================================================= */
+
+.email-body {
+  width: 100%;
+  padding: 0 28px 20px;
+}
+
+.email-body-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  color: #202124;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.email-body-card p {
+  margin: 0 0 22px;
+}
+
+.email-body-card strong {
+  font-weight: 700;
+}
+
+.email-body-card a {
+  color: #1a73e8;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.email-footer {
+  margin-top: 36px;
+  padding-top: 10px;
+  color: #c4c7c5;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+/* =========================================================
+   REPLY / FORWARD
+   ========================================================= */
+
+.email-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 28px 90px;
+}
+
+.reply-button {
+  height: 40px;
+  min-width: 112px;
+  padding: 0 18px;
+  border: 1px solid #9aa0a6;
+  border-radius: 22px;
+  background: #fff;
+  color: #3c4043;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 14px;
+}
+
+.reply-button:hover {
+  background: #f8f9fa;
+  border-color: #80868b;
+}
+
+.reply-button svg {
+  font-size: 19px;
+}
+
+.reaction-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #9aa0a6;
+  border-radius: 50%;
+  background: #fff;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.reaction-button:hover {
+  background: #f8f9fa;
+}
+
+.reaction-button svg {
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   OLDER / ALTERNATIVE MESSAGE CLASSES
+   ========================================================= */
+
+.messages {
+  padding: 0 40px;
+}
+
+.message-card {
+  border-bottom: 1px solid #eee;
+}
+
+.message-summary {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #7b1fa2;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+
+.message-sender-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-sender-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.message-email {
+  display: block;
+  color: #5f6368;
+  font-size: 12px;
+}
+
+.message-date {
+  color: #5f6368;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.message-print {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.message-print:hover {
+  background: #f1f3f4;
+}
+
+.message-content {
+  max-width: 950px;
+  padding: 8px 55px 30px;
+}
+
+.message-content p {
+  margin: 18px 0;
+  color: #202124;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   OLD GMAIL MESSAGE LAYOUT SUPPORT
+   ========================================================= */
+
+.gmail-message {
+  display: flex;
+  gap: 18px;
+  padding: 10px 40px 50px;
+}
+
+.gmail-message-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.gmail-message .message-avatar {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.message-top {
+  min-height: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.message-top strong {
+  color: #202124;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.message-to {
+  margin-top: 4px;
+  color: #5f6368;
+  font-size: 12px;
+}
+
+.message-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.message-time {
+  margin-right: 8px;
+  color: #5f6368;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.message-action {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #5f6368;
+  display: grid;
+  place-items: center;
+}
+
+.message-action:hover {
+  background: #f1f3f4;
+}
+
+.gmail-message-body {
+  max-width: 850px;
+  padding-top: 18px;
+  color: #202124;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.gmail-message-body p {
+  margin: 0 0 20px;
+}
+
+.gmail-reply-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.gmail-reply-actions button {
+  min-width: 100px;
+  height: 38px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #dadce0;
+  border-radius: 18px;
+  background: #fff;
+  color: #3c4043;
+  font-size: 14px;
+}
+
+.gmail-reply-actions button:hover {
+  background: #f6f8fc;
+}
+
+
+/* =========================================================
+   REPLY BOX
+   ========================================================= */
+
+.reply-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 28px 95px 50px;
+}
+
+.reply-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  border: 1px solid #dadce0;
+  border-radius: 18px;
+  background: #fff;
+  color: #3c4043;
+}
+
+.reply-buttons button:hover {
+  background: #f6f8fc;
+}
+
+.reply-box {
+  margin: 25px 95px 50px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.2);
+}
+
+.reply-header {
+  padding: 14px 16px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.reply-box textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.reply-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.send-button {
+  padding: 9px 24px;
+  border: 0;
+  border-radius: 18px;
+  background: #0b57d0;
+  color: #fff;
+}
+
+.send-button:hover {
+  background: #0842a0;
+}
+
+.reply-icon {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+
+.reply-icon:hover {
+  background: #f1f3f4;
+}
+
+
+/* =========================================================
+   COMPOSE WINDOW
+   ========================================================= */
+
+.compose-window {
+  position: fixed;
+  right: 24px;
+  bottom: 0;
+  width: 520px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.compose-window.maximized {
+  width: 80vw;
+  height: 85vh;
+  right: 10vw;
+  bottom: 7vh;
+  border-radius: 10px;
+}
+
+.compose-header {
+  height: 42px;
+  flex-shrink: 0;
+  padding: 0 10px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #404040;
+  color: #fff;
+  font-size: 14px;
+}
+
+.compose-header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.compose-header button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.compose-header button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.compose-input {
+  height: 42px;
+  padding: 0 14px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  outline: 0;
+  font-size: 14px;
+}
+
+.compose-body {
+  flex: 1;
+  padding: 18px 14px;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.compose-footer {
+  height: 58px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.send-email {
+  padding: 9px 25px;
+  border: 0;
+  border-radius: 18px;
+  background: #0b57d0;
+  color: #fff;
+}
+
+.send-email:hover {
+  background: #0842a0;
+}
+
+.compose-tool {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+
+.compose-tool:hover {
+  background: #f1f3f4;
+}
+
+.compose-tool:last-child {
+  margin-left: auto;
+}
+
+.compose-minimized {
+  position: fixed;
+  right: 24px;
+  bottom: 0;
+  width: 300px;
+  height: 44px;
+  padding: 0 12px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #404040;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.compose-minimized button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+.conversation-content::-webkit-scrollbar,
+.conversation::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.conversation-content::-webkit-scrollbar-track,
+.conversation::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f3f4;
+}
+
+.conversation-content::-webkit-scrollbar-thumb,
+.conversation::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+  background: #c1c5c8;
+  border-radius: 8px;
+  border: 2px solid #f1f3f4;
+}
+
+.conversation-content::-webkit-scrollbar-thumb:hover,
+.conversation::-webkit-scrollbar-thumb:hover,
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #9aa0a6;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar-item {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .sidebar-item span,
+  .sidebar-item strong,
+  .compose-btn span,
+  .labels-title {
+    display: none;
+  }
+
+  .header-left {
+    width: auto;
+  }
+
+  .gmail-logo {
+    display: none;
+  }
+
+  .search-box {
+    width: 45vw;
+  }
+
+  .email-sender {
+    width: 120px;
+  }
+
+  .conversation-subject-row {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .conversation-subject-row h1 {
+    font-size: 19px;
+  }
+
+  .email-header {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .email-body {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .email-actions {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .messages {
+    padding: 0 20px;
+  }
+
+  .message-content {
+    padding-left: 45px;
+  }
+
+  .reply-buttons {
+    padding: 25px 40px;
+  }
+
+  .reply-box {
+    margin: 20px 30px 40px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    gap: 8px;
+    padding: 0 8px;
+  }
+
+  .header-actions .icon-btn {
+    display: none;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 64px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .email-sender {
+    width: 90px;
+  }
+
+  .email-time {
+    width: auto;
+  }
+
+  .email-time > span {
+    display: none;
+  }
+
+  .email-time .header-icon-button {
+    display: none;
+  }
+
+  .conversation-navigation > span {
+    display: none;
+  }
+
+  .conversation-subject-row h1 {
+    font-size: 18px;
+  }
+
+  .sender-name-row {
+    display: block;
+  }
+
+  .sender-email {
+    display: inline;
+    margin-left: 3px;
+  }
+
+  .sender-email-row {
+    margin-top: 2px;
+  }
+
+  .email-body-card {
+    font-size: 14px;
+  }
+
+  .gmail-message {
+    padding: 10px 20px 40px;
+    gap: 12px;
+  }
+
+  .message-top {
+    gap: 8px;
+  }
+
+  .message-time {
+    display: none;
+  }
+
+  .gmail-message-body {
+    padding-top: 12px;
+  }
+
+  .compose-window {
+    right: 0;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .compose-window.maximized {
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  .compose-minimized {
+    right: 10px;
+    width: 260px;
+  }
+}
