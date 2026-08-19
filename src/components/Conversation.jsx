@@ -30,9 +30,9 @@ const messages = [
   {
     id: 1,
     sender: "Jade",
-    email: "jade@example.com",
-    recipient: "Esto Safari Dreams Limited",
-    date: "Aug 18, 2026, 9:18 AM",
+    email: "jade@2537.com",
+    recipient: "Me",
+    date: "Jul 14, 2026, 9:18 AM",
     subject:
       "Coastal Kenya Cottage Stay – Referral from Your Sales Agent",
     avatar: "J",
@@ -45,7 +45,7 @@ const messages = [
 
         <p>
           I was referred to your company by one of your sales agents,
-          who recommended Esto Safari Dreams Limited for arranging
+          who recommended Me for arranging
           accommodation and travel services in Kenya.
         </p>
 
@@ -53,8 +53,8 @@ const messages = [
           I will be travelling to Kenya and would like assistance
           arranging a{" "}
           <strong>
-            4-day cottage stay in the Coastal Region from 18 August
-            to 21 August 2026
+            4-day cottage stay in the Coastal Region from 18 July
+            to 21 July 2026
           </strong>
           .
         </p>
@@ -81,10 +81,10 @@ const messages = [
 
   {
     id: 2,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Eston Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 18, 2026, 10:02 AM",
+    date: "Jul 14, 2026, 10:02 AM",
     subject: "Re: Coastal Kenya Cottage Stay",
     avatar: "E",
     avatarClass: "avatar-esto",
@@ -108,7 +108,7 @@ const messages = [
           Based on your requested dates, we can arrange a{" "}
           <strong>
             4-day cottage accommodation package in Kenya's Coastal
-            Region, from 18 August to 21 August 2026
+            Region, from 18 July to 21 July 2026
           </strong>
           .
         </p>
@@ -131,12 +131,9 @@ const messages = [
         <p>
           Kind regards,
           <br />
-          <br />
-          <strong>Estone Odumbe</strong>
-          <br />
           Sole Director
           <br />
-          <strong>Esto Safari Dreams Limited</strong>
+          <strong>Estone Odumbe</strong>
           <br />
           Travel, Tours &amp; Safari Services
           <br />
@@ -149,16 +146,16 @@ const messages = [
   {
     id: 3,
     sender: "Jade",
-    email: "jade@example.com",
-    recipient: "Esto Safari Dreams Limited",
-    date: "Aug 18, 2026, 10:27 AM",
+    email: "jade@2537.com",
+    recipient: "Me",
+    date: "Jul 15, 2026, 23:02 AM",
     subject: "Re: Coastal Kenya Cottage Stay – Package Price",
     avatar: "J",
     avatarClass: "avatar-jade",
     body: (
       <>
         <p>
-          Dear Estone,
+          Dear Estone Odumbe,
         </p>
 
         <p>
@@ -193,10 +190,10 @@ const messages = [
 
   {
     id: 4,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Eston Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 18, 2026, 11:05 AM",
+    date: "Jul 16, 2026, 11:05 AM",
     subject: "Re: Coastal Kenya Cottage Stay – Revised Quote",
     avatar: "E",
     avatarClass: "avatar-esto",
@@ -217,13 +214,13 @@ const messages = [
 
         <p>
           After reviewing your request, we can revise the quotation
-          from <strong>USD 2,500 to USD 2,300</strong> as a special
+          to <strong>USD 2,300</strong> as a special
           rate for your booking.
         </p>
 
         <p>
           The revised package would cover your stay from{" "}
-          <strong>18 August to 21 August 2026</strong>.
+          <strong>18 July to 21 July 2026</strong>.
         </p>
 
         <p>
@@ -237,7 +234,7 @@ const messages = [
           <br />
           <strong>Estone Odumbe</strong>
           <br />
-          Esto Safari Dreams Limited
+          Esto Safari Dreams
         </p>
       </>
     ),
@@ -246,16 +243,16 @@ const messages = [
   {
     id: 5,
     sender: "Jade",
-    email: "jade@example.com",
-    recipient: "Esto Safari Dreams Limited",
-    date: "Aug 18, 2026, 11:32 AM",
+    email: "jade@2537.com",
+    recipient: "Me",
+    date: "Jul 17, 2026, 11:32 AM",
     subject: "Re: Revised Quote – Final Offer",
     avatar: "J",
     avatarClass: "avatar-jade",
     body: (
       <>
         <p>
-          Dear Estone,
+          Dear Me,
         </p>
 
         <p>
@@ -265,12 +262,12 @@ const messages = [
         <p>
           I would really like to proceed with the booking. However,
           my maximum available budget is{" "}
-          <strong>USD 2,229</strong>.
+          <strong>USD 2,299</strong>.
         </p>
 
         <p>
           Would you be able to accept{" "}
-          <strong>USD 2,229 as the final price</strong> for the
+          <strong>USD 2,299 as the final price</strong> for the
           entire package?
         </p>
 
@@ -290,11 +287,11 @@ const messages = [
 
   {
     id: 6,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Estone Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 18, 2026, 12:04 PM",
-    subject: "Re: Final Package Price – USD 2,229",
+    date: "Jul 17, 2026, 12:04 PM",
+    subject: "Re: Final Package Price – USD 2,299",
     avatar: "E",
     avatarClass: "avatar-esto",
     body: (
@@ -309,7 +306,7 @@ const messages = [
 
         <p>
           We have reviewed your request and are pleased to confirm
-          that we can accept <strong>USD 2,229</strong> as the final
+          that we can accept <strong>USD 2,299</strong> as the final
           agreed package price.
         </p>
 
@@ -324,15 +321,15 @@ const messages = [
           <br />
           <strong>Package:</strong> 4-Day Cottage Stay
           <br />
-          <strong>Check-in:</strong> 18 August 2026
+          <strong>Check-in:</strong> 18 July 2026
           <br />
-          <strong>Check-out:</strong> 21 August 2026
+          <strong>Check-out:</strong> 21 July 2026
           <br />
           <strong>Duration:</strong> 4 days
           <br />
           <strong>Original quotation:</strong> USD 2,500
           <br />
-          <strong>Final agreed price:</strong> USD 2,229
+          <strong>Final agreed price:</strong> USD 2,299
         </p>
 
         <p>
@@ -361,11 +358,11 @@ const messages = [
           Kind regards,
           <br />
           <br />
-          <strong>Estone Odumbe</strong>
+          <strong></strong>
           <br />
           Sole Director
           <br />
-          <strong>Esto Safari Dreams Limited</strong>
+          <strong>Estone Odumbe</strong>
         </p>
       </>
     ),
@@ -374,9 +371,9 @@ const messages = [
   {
     id: 7,
     sender: "Jade",
-    email: "jade@example.com",
-    recipient: "Esto Safari Dreams Limited",
-    date: "Aug 18, 2026, 12:28 PM",
+    email: "jade@2537.com",
+    recipient: "Me",
+    date: "Jul 17, 2026, 11:02 PM",
     subject: "Re: Final Package Price – Payment",
     avatar: "J",
     avatarClass: "avatar-jade",
@@ -392,7 +389,7 @@ const messages = [
 
         <p>
           I have proceeded with the payment of{" "}
-          <strong>USD 2,229</strong> using the payment option
+          <strong>USD 2,299</strong> using the payment option
           provided.
         </p>
 
@@ -413,10 +410,10 @@ const messages = [
 
   {
     id: 8,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Estone Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 18, 2026, 1:01 PM",
+    date: "Jul 18, 2026, 11:22 PM",
     subject: "Re: Payment – Coastal Cottage Booking",
     avatar: "E",
     avatarClass: "avatar-esto",
@@ -446,13 +443,13 @@ const messages = [
           <br />
           <strong>Accommodation:</strong> Cottage
           <br />
-          <strong>Check-in:</strong> 18 August 2026
+          <strong>Check-in:</strong> 18 July 2026
           <br />
-          <strong>Check-out:</strong> 21 August 2026
+          <strong>Check-out:</strong> 21 July 2026
           <br />
           <strong>Duration:</strong> 4 days
           <br />
-          <strong>Agreed package price:</strong> USD 2,229
+          <strong>Agreed package price:</strong> USD 2,299
         </p>
 
         <p>
@@ -464,7 +461,7 @@ const messages = [
           Kind regards,
           <br />
           <br />
-          <strong>Esto Safari Dreams Limited</strong>
+          <strong>Estone Odumbe</strong>
         </p>
       </>
     ),
@@ -472,10 +469,10 @@ const messages = [
 
   {
     id: 9,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Estone Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 18, 2026, 2:15 PM",
+    date: "Jul 18, 2026, 2:15 PM",
     subject: "Final Confirmation – Coastal Cottage Stay",
     avatar: "E",
     avatarClass: "avatar-esto",
@@ -492,7 +489,7 @@ const messages = [
 
         <p>
           Your scheduled stay is from{" "}
-          <strong>18 August 2026 through 21 August 2026</strong>.
+          <strong>18 July 2026 through 21 July 2026</strong>.
         </p>
 
         <p>
@@ -515,7 +512,7 @@ const messages = [
           <br />
           <strong>Estone Odumbe</strong>
           <br />
-          Esto Safari Dreams Limited
+          Estone Odumbe
         </p>
       </>
     ),
@@ -524,16 +521,16 @@ const messages = [
   {
     id: 10,
     sender: "Jade",
-    email: "jade@example.com",
-    recipient: "Esto Safari Dreams Limited",
-    date: "Aug 18, 2026, 4:42 PM",
+    email: "jade@2537.com",
+    recipient: "Me",
+    date: "Jul 19, 2026, 4:42 PM",
     subject: "Re: Final Confirmation – I Have Arrived",
     avatar: "J",
     avatarClass: "avatar-jade",
     body: (
       <>
         <p>
-          Dear Estone,
+          Dear Estone Odumbe,
         </p>
 
         <p>
@@ -561,10 +558,10 @@ const messages = [
 
   {
     id: 11,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Estone Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 18, 2026, 5:03 PM",
+    date: "Jul 20, 2026, 5:03 PM",
     subject: "Re: Welcome to Kenya",
     avatar: "E",
     avatarClass: "avatar-esto",
@@ -592,7 +589,7 @@ const messages = [
           Kind regards,
           <br />
           <br />
-          <strong>Esto Safari Dreams Limited</strong>
+          <strong>Estone Odumbe</strong>
         </p>
       </>
     ),
@@ -601,16 +598,16 @@ const messages = [
   {
     id: 12,
     sender: "Jade",
-    email: "jade@example.com",
-    recipient: "Esto Safari Dreams Limited",
-    date: "Aug 21, 2026, 9:20 AM",
+    email: "jade@2537.com",
+    recipient: "Me",
+    date: "Jul 21, 2026, 9:20 AM",
     subject: "Re: Coastal Cottage Stay – Service Completion",
     avatar: "J",
     avatarClass: "avatar-jade",
     body: (
       <>
         <p>
-          Dear Estone,
+          Dear Estone Odumbe,
         </p>
 
         <p>
@@ -619,7 +616,7 @@ const messages = [
 
         <p>
           I confirm that my scheduled stay from{" "}
-          <strong>18 August to 21 August 2026</strong> has been
+          <strong>18 July to 21 July 2026</strong> has been
           completed and that the agreed accommodation and services
           were provided.
         </p>
@@ -641,10 +638,10 @@ const messages = [
 
   {
     id: 13,
-    sender: "Esto Safari Dreams Limited",
-    email: "info@estosafaridreams.com",
+    sender: "Estone Odumbe",
+    email: "estosafaridreams@gmail.com",
     recipient: "Jade",
-    date: "Aug 21, 2026, 10:11 AM",
+    date: "Jul 22, 2026, 10:11 AM",
     subject: "Re: Coastal Cottage Stay – Thank You",
     avatar: "E",
     avatarClass: "avatar-esto",
@@ -668,7 +665,7 @@ const messages = [
         <p>
           It was a pleasure assisting with your trip to Kenya, and
           we sincerely appreciate the trust you placed in{" "}
-          <strong>Esto Safari Dreams Limited</strong>.
+          <strong>Esto Safari Dreams</strong>.
         </p>
 
         <p>
@@ -680,11 +677,9 @@ const messages = [
           Warm regards,
           <br />
           <br />
-          <strong>Estone Odumbe</strong>
-          <br />
           Sole Director
           <br />
-          <strong>Esto Safari Dreams Limited</strong>
+          <strong>Estone Odumbe</strong>
           <br />
           Travel, Tours &amp; Safari Services
           <br />
@@ -1001,28 +996,28 @@ const Conversation = () => {
 
                         <div className="message-to">
 
-                          <span>
-                            to {message.recipient}
-                          </span>
+  <span>
+    to {message.sender === "Jade" ? "Me" : message.recipient}
+  </span>
 
-                          <button
-                            className="recipient-details"
-                            title="Show details"
-                            onClick={(event) =>
-                              toggleDetails(
-                                event,
-                                message.id
-                              )
-                            }
-                          >
-                            {isDetailsOpen ? (
-                              <KeyboardArrowUpOutlinedIcon />
-                            ) : (
-                              <KeyboardArrowDownOutlinedIcon />
-                            )}
-                          </button>
+  <button
+    className="recipient-details"
+    title="Show details"
+    onClick={(event) =>
+      toggleDetails(
+        event,
+        message.id
+      )
+    }
+  >
+    {isDetailsOpen ? (
+      <KeyboardArrowUpOutlinedIcon />
+    ) : (
+      <KeyboardArrowDownOutlinedIcon />
+    )}
+  </button>
 
-                        </div>
+</div>
 
 
                         {/* =========================================

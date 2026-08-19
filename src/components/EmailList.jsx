@@ -91,7 +91,7 @@ function Conversation({ email, onBack }) {
             <div>
               <strong>{email.sender}</strong>
               <span className="message-email">
-                &lt;no-reply@example.com&gt;
+                &lt;no-reply@2537.com&gt;
               </span>
             </div>
 

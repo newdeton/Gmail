@@ -102,6 +102,12 @@ button {
   font-size: 22px;
 }
 
+.gmail-logo img {
+  width: 109px;
+  height: auto;
+  display: block;
+}
+
 .gmail-m {
   color: #ea4335;
   font-weight: 700;
@@ -488,7 +494,7 @@ button {
 /*
    This intentionally matches Gmail's structure:
 
-   [avatar]  User Name <email@mail.com>       Aug 15, 2026...
+   [avatar]  User Name <email@mail.com>       Jul 15, 2026...
              to me ▾
 */
 
