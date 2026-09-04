@@ -17,26 +17,23 @@ import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutl
 /* ===============================================================
    CONVERSATION MESSAGES
 
+   Adrian — One-Night Accommodation Booking
+
    Every message is stored here.
 
-   open:
-   false = folded by default
-   true  = expanded
-
-   The component creates the open/closed state automatically.
+   Messages start folded and can be expanded individually.
    =============================================================== */
 
 const messages = [
   {
     id: 1,
-    sender: "Jade",
-    email: "jade@2537.com",
-    recipient: "Me",
-    date: "Jul 14, 2026, 9:18 AM",
-    subject:
-      "Coastal Kenya Cottage Stay – Referral from Your Sales Agent",
-    avatar: "J",
-    avatarClass: "avatar-jade",
+    sender: "Adrian",
+    email: "adrian@example.com",
+    recipient: "Esto Safari Dreams Limited",
+    date: "Aug 20, 2026, 9:18 AM",
+    subject: "Inquiry – One Night Accommodation",
+    avatar: "A",
+    avatarClass: "avatar-adrian",
     body: (
       <>
         <p>
@@ -44,36 +41,27 @@ const messages = [
         </p>
 
         <p>
-          I was referred to your company by one of your sales agents,
-          who recommended Me for arranging
-          accommodation and travel services in Kenya.
+          I was referred to your company by one of your sales
+          representatives and would like to make a booking for
+          accommodation.
         </p>
 
         <p>
-          I will be travelling to Kenya and would like assistance
-          arranging a{" "}
-          <strong>
-            4-day cottage stay in the Coastal Region from 18 July
-            to 21 July 2026
-          </strong>
-          .
+          I am looking for a room for <strong>one night</strong> and
+          would like to know what options you have available,
+          including the price and what is included with the
+          accommodation.
         </p>
 
         <p>
-          Could you please provide details of the available
-          accommodation, what is included in the package, and the
-          total cost?
-        </p>
-
-        <p>
-          I would also appreciate information about the booking
-          process and payment options.
+          Please let me know the booking process and available
+          payment options.
         </p>
 
         <p>
           Kind regards,
           <br />
-          <strong>Jade</strong>
+          <strong>Adrian</strong>
         </p>
       </>
     ),
@@ -81,63 +69,75 @@ const messages = [
 
   {
     id: 2,
-    sender: "Eston Odumbe",
+    sender: "Esto Safari Dreams Limited",
     email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 14, 2026, 10:02 AM",
-    subject: "Re: Coastal Kenya Cottage Stay",
+    recipient: "Adrian",
+    date: "Aug 20, 2026, 10:02 AM",
+    subject: "Re: Inquiry – One Night Accommodation",
     avatar: "E",
     avatarClass: "avatar-esto",
     body: (
       <>
         <p>
-          Dear Jade,
+          Dear Adrian,
         </p>
 
         <p>
-          Thank you for contacting us, and we appreciate the referral
-          from our sales representative.
-        </p>
-
-        <p>
-          We would be delighted to assist with your upcoming visit
-          to Kenya.
-        </p>
-
-        <p>
-          Based on your requested dates, we can arrange a{" "}
-          <strong>
-            4-day cottage accommodation package in Kenya's Coastal
-            Region, from 18 July to 21 July 2026
-          </strong>
-          .
-        </p>
-
-        <p>
-          The initial package quotation is <strong>USD 2,500</strong>.
-        </p>
-
-        <p>
-          The package will cover the agreed cottage accommodation
-          and the travel-related arrangements discussed with our
+          Thank you for contacting <strong>Esto Safari Dreams
+          Limited</strong>, and we appreciate the referral from our
           sales representative.
         </p>
 
         <p>
-          If the proposal is suitable, we can proceed with confirming
-          the details and arranging payment.
+          We would be happy to assist with your accommodation
+          requirements.
+        </p>
+
+        <p>
+          We can arrange a{" "}
+          <strong>one-night room stay</strong> based on your
+          requested date.
+        </p>
+
+        <p>
+          The available package is offered at <strong>USD 149</strong>.
+        </p>
+
+        <p>
+          The booking includes:
+        </p>
+
+        <ul>
+          <li>One-night room accommodation;</li>
+          <li>
+            Standard guest check-in and check-out arrangements;
+          </li>
+          <li>Accommodation support from our team; and</li>
+          <li>Assistance with the booking process.</li>
+        </ul>
+
+        <p>
+          If you would like to proceed, we can provide the payment
+          instructions and finalize the reservation.
         </p>
 
         <p>
           Kind regards,
           <br />
-          Sole Director
           <br />
           <strong>Estone Odumbe</strong>
+          <br />
+          Sole Director
+          <br />
+          <strong>Esto Safari Dreams Limited</strong>
           <br />
           Travel, Tours &amp; Safari Services
           <br />
           Company Registration No. <strong>PVT-DM1K8YZ5</strong>
+          <br />
+          <a href="mailto:estosafaridreams@gmail.com">
+            estosafaridreams@gmail.com
+          </a>
         </p>
       </>
     ),
@@ -145,238 +145,13 @@ const messages = [
 
   {
     id: 3,
-    sender: "Jade",
-    email: "jade@2537.com",
-    recipient: "Me",
-    date: "Jul 15, 2026, 23:02 AM",
-    subject: "Re: Coastal Kenya Cottage Stay – Package Price",
-    avatar: "J",
-    avatarClass: "avatar-jade",
-    body: (
-      <>
-        <p>
-          Dear Estone Odumbe,
-        </p>
-
-        <p>
-          Thank you for the proposal.
-        </p>
-
-        <p>
-          I am interested in proceeding with the package, but the{" "}
-          <strong>USD 2,500</strong> quotation is slightly above my
-          budget.
-        </p>
-
-        <p>
-          Considering that I was referred to your company by your
-          sales agent, would you be able to offer me a discounted
-          rate?
-        </p>
-
-        <p>
-          If we can agree on a reasonable price, I would be happy to
-          confirm the booking and make payment promptly.
-        </p>
-
-        <p>
-          Kind regards,
-          <br />
-          <strong>Jade</strong>
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 4,
-    sender: "Eston Odumbe",
-    email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 16, 2026, 11:05 AM",
-    subject: "Re: Coastal Kenya Cottage Stay – Revised Quote",
-    avatar: "E",
-    avatarClass: "avatar-esto",
-    body: (
-      <>
-        <p>
-          Dear Jade,
-        </p>
-
-        <p>
-          Thank you for getting back to us.
-        </p>
-
-        <p>
-          We appreciate your interest in booking with Esto Safari
-          Dreams Limited.
-        </p>
-
-        <p>
-          After reviewing your request, we can revise the quotation
-          to <strong>USD 2,300</strong> as a special
-          rate for your booking.
-        </p>
-
-        <p>
-          The revised package would cover your stay from{" "}
-          <strong>18 July to 21 July 2026</strong>.
-        </p>
-
-        <p>
-          Please let us know if you would like to proceed with the
-          revised offer.
-        </p>
-
-        <p>
-          Kind regards,
-          <br />
-          <br />
-          <strong>Estone Odumbe</strong>
-          <br />
-          Esto Safari Dreams
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 5,
-    sender: "Jade",
-    email: "jade@2537.com",
-    recipient: "Me",
-    date: "Jul 17, 2026, 11:32 AM",
-    subject: "Re: Revised Quote – Final Offer",
-    avatar: "J",
-    avatarClass: "avatar-jade",
-    body: (
-      <>
-        <p>
-          Dear Me,
-        </p>
-
-        <p>
-          Thank you for reducing the price.
-        </p>
-
-        <p>
-          I would really like to proceed with the booking. However,
-          my maximum available budget is{" "}
-          <strong>USD 2,299</strong>.
-        </p>
-
-        <p>
-          Would you be able to accept{" "}
-          <strong>USD 2,299 as the final price</strong> for the
-          entire package?
-        </p>
-
-        <p>
-          If you can accommodate this amount, I am ready to proceed
-          with payment immediately.
-        </p>
-
-        <p>
-          Kind regards,
-          <br />
-          <strong>Jade</strong>
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 6,
-    sender: "Estone Odumbe",
-    email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 17, 2026, 12:04 PM",
-    subject: "Re: Final Package Price – USD 2,299",
-    avatar: "E",
-    avatarClass: "avatar-esto",
-    body: (
-      <>
-        <p>
-          Dear Jade,
-        </p>
-
-        <p>
-          Thank you for your message.
-        </p>
-
-        <p>
-          We have reviewed your request and are pleased to confirm
-          that we can accept <strong>USD 2,299</strong> as the final
-          agreed package price.
-        </p>
-
-        <p>
-          <strong>Final Booking Summary</strong>
-        </p>
-
-        <p>
-          <strong>Guest:</strong> Jade
-          <br />
-          <strong>Destination:</strong> Kenya – Coastal Region
-          <br />
-          <strong>Package:</strong> 4-Day Cottage Stay
-          <br />
-          <strong>Check-in:</strong> 18 July 2026
-          <br />
-          <strong>Check-out:</strong> 21 July 2026
-          <br />
-          <strong>Duration:</strong> 4 days
-          <br />
-          <strong>Original quotation:</strong> USD 2,500
-          <br />
-          <strong>Final agreed price:</strong> USD 2,299
-        </p>
-
-        <p>
-          For convenience, payment can be made through the secure
-          Paystack checkout:
-        </p>
-
-        <p>
-          <strong>Paystack Payment Link:</strong>
-          <br />
-          <a
-            href="https://paystack.shop/pay/vt_ypl58dzz"
-            target="_blank"
-            rel="noreferrer"
-          >
-            https://paystack.shop/pay/vt_ypl58dzz
-          </a>
-        </p>
-
-        <p>
-          Once payment has actually been completed, please retain
-          your payment confirmation for your records.
-        </p>
-
-        <p>
-          Kind regards,
-          <br />
-          <br />
-          <strong></strong>
-          <br />
-          Sole Director
-          <br />
-          <strong>Estone Odumbe</strong>
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 7,
-    sender: "Jade",
-    email: "jade@2537.com",
-    recipient: "Me",
-    date: "Jul 17, 2026, 11:02 PM",
-    subject: "Re: Final Package Price – Payment",
-    avatar: "J",
-    avatarClass: "avatar-jade",
+    sender: "Adrian",
+    email: "adrian@example.com",
+    recipient: "Esto Safari Dreams Limited",
+    date: "Aug 20, 2026, 11:15 AM",
+    subject: "Re: One Night Accommodation – Confirmation",
+    avatar: "A",
+    avatarClass: "avatar-adrian",
     body: (
       <>
         <p>
@@ -384,25 +159,217 @@ const messages = [
         </p>
 
         <p>
-          Thank you for accepting the final price.
+          Thank you for the information.
         </p>
 
         <p>
-          I have proceeded with the payment of{" "}
-          <strong>USD 2,299</strong> using the payment option
-          provided.
+          The <strong>USD 149</strong> price is acceptable to me and
+          I would like to proceed with the one-night accommodation
+          booking.
         </p>
 
         <p>
-          Please confirm receipt of the payment and advise me
-          regarding the next steps and any information you require
-          from me before arrival.
+          Please send me the payment instructions so that I can
+          complete the booking.
         </p>
 
         <p>
           Kind regards,
           <br />
-          <strong>Jade</strong>
+          <strong>Adrian</strong>
+        </p>
+      </>
+    ),
+  },
+
+  {
+    id: 4,
+    sender: "Esto Safari Dreams Limited",
+    email: "estosafaridreams@gmail.com",
+    recipient: "Adrian",
+    date: "Aug 20, 2026, 11:42 AM",
+    subject: "Re: One Night Accommodation – Payment",
+    avatar: "E",
+    avatarClass: "avatar-esto",
+    body: (
+      <>
+        <p>
+          Dear Adrian,
+        </p>
+
+        <p>
+          Thank you for confirming.
+        </p>
+
+        <p>
+          The agreed booking details are:
+        </p>
+
+        <p>
+          <strong>Guest:</strong> Adrian
+          <br />
+          <strong>Service:</strong> One-night room accommodation
+          <br />
+          <strong>Booking Date:</strong> 20 August 2026
+          <br />
+          <strong>Duration:</strong> 1 night
+          <br />
+          <strong>Total Amount:</strong> USD 149
+        </p>
+
+        <p>
+          Payment can be completed through our available secure
+          online payment channel.
+        </p>
+
+        <p>
+          Once payment has been successfully completed, please send
+          us the payment confirmation so that we can proceed with the
+          reservation and provide the applicable accommodation
+          confirmation.
+        </p>
+
+        <p>
+          Kind regards,
+          <br />
+          <br />
+          <strong>Esto Safari Dreams Limited</strong>
+        </p>
+      </>
+    ),
+  },
+
+  {
+    id: 5,
+    sender: "Adrian",
+    email: "adrian@example.com",
+    recipient: "Esto Safari Dreams Limited",
+    date: "Aug 20, 2026, 1:08 PM",
+    subject: "Re: One Night Accommodation – Payment Confirmation",
+    avatar: "A",
+    avatarClass: "avatar-adrian",
+    body: (
+      <>
+        <p>
+          Dear Team,
+        </p>
+
+        <p>
+          Thank you.
+        </p>
+
+        <p>
+          I have completed the payment of <strong>USD 149</strong>{" "}
+          for the one-night accommodation.
+        </p>
+
+        <p>
+          Please confirm receipt and proceed with the reservation.
+        </p>
+
+        <p>
+          Kind regards,
+          <br />
+          <strong>Adrian</strong>
+        </p>
+      </>
+    ),
+  },
+
+  {
+    id: 6,
+    sender: "Esto Safari Dreams Limited",
+    email: "estosafaridreams@gmail.com",
+    recipient: "Adrian",
+    date: "Aug 20, 2026, 1:35 PM",
+    subject: "Re: One Night Accommodation – Booking Confirmation",
+    avatar: "E",
+    avatarClass: "avatar-esto",
+    body: (
+      <>
+        <p>
+          Dear Adrian,
+        </p>
+
+        <p>
+          Thank you for the payment update.
+        </p>
+
+        <p>
+          We have recorded your booking request for the one-night
+          accommodation.
+        </p>
+
+        <p>
+          <strong>Booking Summary</strong>
+        </p>
+
+        <p>
+          <strong>Guest:</strong> Adrian
+          <br />
+          <strong>Accommodation:</strong> Room
+          <br />
+          <strong>Duration:</strong> 1 night
+          <br />
+          <strong>Booking Date:</strong> 20 August 2026
+          <br />
+          <strong>Total Package:</strong> USD 149
+        </p>
+
+        <p>
+          Our team will coordinate the accommodation arrangements
+          and provide the relevant check-in information.
+        </p>
+
+        <p>
+          Please ensure that you have your identification and booking
+          information available when checking in.
+        </p>
+
+        <p>
+          We look forward to assisting you.
+        </p>
+
+        <p>
+          Kind regards,
+          <br />
+          <br />
+          <strong>Estone Odumbe</strong>
+          <br />
+          Esto Safari Dreams Limited
+        </p>
+      </>
+    ),
+  },
+
+  {
+    id: 7,
+    sender: "Adrian",
+    email: "adrian@example.com",
+    recipient: "Esto Safari Dreams Limited",
+    date: "Aug 20, 2026, 5:18 PM",
+    subject: "Re: Accommodation Booking – Arrival",
+    avatar: "A",
+    avatarClass: "avatar-adrian",
+    body: (
+      <>
+        <p>
+          Dear Esto Safari Dreams Team,
+        </p>
+
+        <p>
+          I have arrived and have checked in for the accommodation.
+        </p>
+
+        <p>
+          Thank you for coordinating the booking and for your
+          assistance.
+        </p>
+
+        <p>
+          Kind regards,
+          <br />
+          <strong>Adrian</strong>
         </p>
       </>
     ),
@@ -410,58 +377,38 @@ const messages = [
 
   {
     id: 8,
-    sender: "Estone Odumbe",
+    sender: "Esto Safari Dreams Limited",
     email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 18, 2026, 11:22 PM",
-    subject: "Re: Payment – Coastal Cottage Booking",
+    recipient: "Adrian",
+    date: "Aug 20, 2026, 5:32 PM",
+    subject: "Re: Accommodation Booking – Welcome",
     avatar: "E",
     avatarClass: "avatar-esto",
     body: (
       <>
         <p>
-          Dear Jade,
+          Dear Adrian,
         </p>
 
         <p>
-          Thank you for the update.
+          We are pleased to hear that you have arrived safely and
+          completed your check-in.
         </p>
 
         <p>
-          We have noted your payment notification and are proceeding
-          with the applicable booking arrangements.
+          We hope you have a comfortable stay.
         </p>
 
         <p>
-          Your booking details are recorded as follows:
-        </p>
-
-        <p>
-          <strong>Guest:</strong> Jade
-          <br />
-          <strong>Location:</strong> Kenya Coastal Region
-          <br />
-          <strong>Accommodation:</strong> Cottage
-          <br />
-          <strong>Check-in:</strong> 18 July 2026
-          <br />
-          <strong>Check-out:</strong> 21 July 2026
-          <br />
-          <strong>Duration:</strong> 4 days
-          <br />
-          <strong>Agreed package price:</strong> USD 2,299
-        </p>
-
-        <p>
-          Our team will coordinate the arrangements and provide you
-          with the relevant information required for your arrival.
+          Should you require any assistance during your stay, please
+          do not hesitate to contact our team.
         </p>
 
         <p>
           Kind regards,
           <br />
           <br />
-          <strong>Estone Odumbe</strong>
+          <strong>Esto Safari Dreams Limited</strong>
         </p>
       </>
     ),
@@ -469,50 +416,44 @@ const messages = [
 
   {
     id: 9,
-    sender: "Estone Odumbe",
-    email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 18, 2026, 2:15 PM",
-    subject: "Final Confirmation – Coastal Cottage Stay",
-    avatar: "E",
-    avatarClass: "avatar-esto",
+    sender: "Adrian",
+    email: "adrian@example.com",
+    recipient: "Esto Safari Dreams Limited",
+    date: "Aug 21, 2026, 10:15 AM",
+    subject: "Re: One Night Accommodation – Service Completion",
+    avatar: "A",
+    avatarClass: "avatar-adrian",
     body: (
       <>
         <p>
-          Dear Jade,
+          Dear Estone,
         </p>
 
         <p>
-          We are pleased to confirm the upcoming arrangements for
-          your Coastal Region stay.
+          Thank you for your assistance with my accommodation
+          booking.
         </p>
 
         <p>
-          Your scheduled stay is from{" "}
-          <strong>18 July 2026 through 21 July 2026</strong>.
+          I confirm that the{" "}
+          <strong>one-night accommodation service</strong> arranged
+          through Esto Safari Dreams Limited has been completed.
         </p>
 
         <p>
-          Please ensure that you have your travel documents and any
-          other personal requirements ready for your trip.
+          The accommodation arrangements were provided as agreed, and
+          I appreciate the assistance from your team throughout the
+          booking process.
         </p>
 
         <p>
-          Our team remains available should you require assistance
-          before your arrival.
+          Thank you for your service.
         </p>
 
         <p>
-          We look forward to welcoming you to Kenya.
-        </p>
-
-        <p>
-          Warm regards,
+          Kind regards,
           <br />
-          <br />
-          <strong>Estone Odumbe</strong>
-          <br />
-          Estone Odumbe
+          <strong>Adrian</strong>
         </p>
       </>
     ),
@@ -520,171 +461,53 @@ const messages = [
 
   {
     id: 10,
-    sender: "Jade",
-    email: "jade@2537.com",
-    recipient: "Me",
-    date: "Jul 19, 2026, 4:42 PM",
-    subject: "Re: Final Confirmation – I Have Arrived",
-    avatar: "J",
-    avatarClass: "avatar-jade",
-    body: (
-      <>
-        <p>
-          Dear Estone Odumbe,
-        </p>
-
-        <p>
-          I wanted to let you know that I have arrived safely and
-          have proceeded with the accommodation arrangements.
-        </p>
-
-        <p>
-          Thank you for the assistance provided before my arrival.
-        </p>
-
-        <p>
-          I will let you know if I require any further assistance
-          during my stay.
-        </p>
-
-        <p>
-          Kind regards,
-          <br />
-          <strong>Jade</strong>
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 11,
-    sender: "Estone Odumbe",
+    sender: "Esto Safari Dreams Limited",
     email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 20, 2026, 5:03 PM",
-    subject: "Re: Welcome to Kenya",
+    recipient: "Adrian",
+    date: "Aug 21, 2026, 11:02 AM",
+    subject: "Re: One Night Accommodation – Thank You",
     avatar: "E",
     avatarClass: "avatar-esto",
     body: (
       <>
         <p>
-          Dear Jade,
+          Dear Adrian,
         </p>
 
         <p>
-          We are pleased to hear that you have arrived safely.
+          Thank you for confirming completion of your stay.
         </p>
 
         <p>
-          Should you require any assistance concerning the
-          accommodation or the arrangements included in your
-          package, please feel free to contact us.
+          We are pleased to know that your accommodation
+          arrangements were completed successfully.
         </p>
 
         <p>
-          We hope you have a pleasant stay along the Kenyan Coast.
+          We sincerely appreciate your choosing{" "}
+          <strong>Esto Safari Dreams Limited</strong> and trusting us
+          with your travel arrangements.
         </p>
 
         <p>
-          Kind regards,
-          <br />
-          <br />
-          <strong>Estone Odumbe</strong>
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 12,
-    sender: "Jade",
-    email: "jade@2537.com",
-    recipient: "Me",
-    date: "Jul 21, 2026, 9:20 AM",
-    subject: "Re: Coastal Cottage Stay – Service Completion",
-    avatar: "J",
-    avatarClass: "avatar-jade",
-    body: (
-      <>
-        <p>
-          Dear Estone Odumbe,
-        </p>
-
-        <p>
-          Thank you for the assistance throughout my stay.
-        </p>
-
-        <p>
-          I confirm that my scheduled stay from{" "}
-          <strong>18 July to 21 July 2026</strong> has been
-          completed and that the agreed accommodation and services
-          were provided.
-        </p>
-
-        <p>
-          I appreciate the communication and assistance from your
-          team throughout the booking and stay.
-        </p>
-
-        <p>
-          Kind regards,
-          <br />
-          <br />
-          <strong>Jade</strong>
-        </p>
-      </>
-    ),
-  },
-
-  {
-    id: 13,
-    sender: "Estone Odumbe",
-    email: "estosafaridreams@gmail.com",
-    recipient: "Jade",
-    date: "Jul 22, 2026, 10:11 AM",
-    subject: "Re: Coastal Cottage Stay – Thank You",
-    avatar: "E",
-    avatarClass: "avatar-esto",
-    body: (
-      <>
-        <p>
-          Dear Jade,
-        </p>
-
-        <p>
-          Thank you for taking the time to confirm completion of
-          your stay.
-        </p>
-
-        <p>
-          We are pleased to know that the arrangements were
-          completed and that you were satisfied with the services
-          provided.
-        </p>
-
-        <p>
-          It was a pleasure assisting with your trip to Kenya, and
-          we sincerely appreciate the trust you placed in{" "}
-          <strong>Esto Safari Dreams</strong>.
-        </p>
-
-        <p>
-          We hope to have the opportunity to assist you again in
-          the future.
+          We hope to assist you again in the future.
         </p>
 
         <p>
           Warm regards,
           <br />
           <br />
+          <strong>Estone Odumbe</strong>
+          <br />
           Sole Director
           <br />
-          <strong>Estone Odumbe</strong>
+          <strong>Esto Safari Dreams Limited</strong>
           <br />
           Travel, Tours &amp; Safari Services
           <br />
-          Company Registration No. <strong>PVT-DM1K8YZ5</strong>
+          Company Registration No.: <strong>PVT-DM1K8YZ5</strong>
           <br />
+          Email:{" "}
           <a href="mailto:estosafaridreams@gmail.com">
             estosafaridreams@gmail.com
           </a>
@@ -701,41 +524,14 @@ const messages = [
 
 const Conversation = () => {
 
-  /*
-   * -------------------------------------------------------------
-   * OPEN MESSAGE STATE
-   * -------------------------------------------------------------
-   *
-   * Object format:
-   *
-   * {
-   *   1: false,
-   *   2: true,
-   *   3: false
-   * }
-   *
-   * Every message starts folded.
-   */
-
   const [openMessages, setOpenMessages] = useState({});
-
-
-  /*
-   * -------------------------------------------------------------
-   * DETAILS DROPDOWN STATE
-   * -------------------------------------------------------------
-   *
-   * Each message has its own "to..." dropdown.
-   */
 
   const [detailsOpen, setDetailsOpen] = useState({});
 
 
-  /*
-   * -------------------------------------------------------------
-   * TOGGLE MESSAGE
-   * -------------------------------------------------------------
-   */
+  /* =============================================================
+     TOGGLE MESSAGE
+  ============================================================= */
 
   const toggleMessage = (messageId) => {
     setOpenMessages((current) => ({
@@ -745,11 +541,9 @@ const Conversation = () => {
   };
 
 
-  /*
-   * -------------------------------------------------------------
-   * TOGGLE DETAILS
-   * -------------------------------------------------------------
-   */
+  /* =============================================================
+     TOGGLE DETAILS
+  ============================================================= */
 
   const toggleDetails = (event, messageId) => {
     event.stopPropagation();
@@ -761,11 +555,9 @@ const Conversation = () => {
   };
 
 
-  /*
-   * -------------------------------------------------------------
-   * KEYBOARD MESSAGE TOGGLE
-   * -------------------------------------------------------------
-   */
+  /* =============================================================
+     KEYBOARD MESSAGE TOGGLE
+  ============================================================= */
 
   const handleMessageKeyDown = (event, messageId) => {
     if (event.key === "Enter" || event.key === " ") {
@@ -884,8 +676,7 @@ const Conversation = () => {
           <div className="subject-wrapper">
 
             <h1>
-              Coastal Kenya Cottage Stay – Referral from Your Sales
-              Agent
+              Inquiry – One Night Accommodation
             </h1>
 
             <span className="inbox-label">
@@ -916,7 +707,9 @@ const Conversation = () => {
             return (
               <div
                 className={`message-card ${
-                  isOpen ? "message-card-open" : "message-card-folded"
+                  isOpen
+                    ? "message-card-open"
+                    : "message-card-folded"
                 }`}
                 key={message.id}
               >
@@ -996,28 +789,28 @@ const Conversation = () => {
 
                         <div className="message-to">
 
-  <span>
-    to {message.sender === "Jade" ? "Me" : message.recipient}
-  </span>
+                          <span>
+                            to {message.recipient}
+                          </span>
 
-  <button
-    className="recipient-details"
-    title="Show details"
-    onClick={(event) =>
-      toggleDetails(
-        event,
-        message.id
-      )
-    }
-  >
-    {isDetailsOpen ? (
-      <KeyboardArrowUpOutlinedIcon />
-    ) : (
-      <KeyboardArrowDownOutlinedIcon />
-    )}
-  </button>
+                          <button
+                            className="recipient-details"
+                            title="Show details"
+                            onClick={(event) =>
+                              toggleDetails(
+                                event,
+                                message.id
+                              )
+                            }
+                          >
+                            {isDetailsOpen ? (
+                              <KeyboardArrowUpOutlinedIcon />
+                            ) : (
+                              <KeyboardArrowDownOutlinedIcon />
+                            )}
+                          </button>
 
-</div>
+                        </div>
 
 
                         {/* =========================================
@@ -1148,8 +941,6 @@ const Conversation = () => {
 
                     {/* =============================================
                         MESSAGE BODY
-
-                        ONLY VISIBLE WHEN OPEN
                     ============================================= */}
 
                     {isOpen && (
@@ -1212,10 +1003,6 @@ const Conversation = () => {
       ========================================================= */}
 
       <style>{`
-
-        /* =======================================================
-           PAGE
-        ======================================================= */
 
         .conversation-page {
           width: 100%;
@@ -1506,7 +1293,7 @@ const Conversation = () => {
         }
 
 
-        .avatar-jade {
+        .avatar-adrian {
           background: #7b1fa2;
         }
 
@@ -1530,7 +1317,7 @@ const Conversation = () => {
 
 
         /* =======================================================
-           MESSAGE TOP / CLICK TARGET
+           MESSAGE TOP
         ======================================================= */
 
         .message-top {
@@ -1837,6 +1624,22 @@ const Conversation = () => {
         }
 
 
+        .gmail-message-body ul {
+          margin:
+            0
+            0
+            20px
+            20px;
+
+          padding-left: 20px;
+        }
+
+
+        .gmail-message-body li {
+          margin-bottom: 6px;
+        }
+
+
         .gmail-message-body a {
           color: #1a73e8;
 
@@ -1915,9 +1718,6 @@ const Conversation = () => {
 
         /* =======================================================
            FORWARD ICON
-
-           Mirror the forward icon so it points in the opposite
-           direction from the reply icon.
         ======================================================= */
 
         .forward-icon {
