@@ -21,9 +21,8 @@ import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutl
 const messages = [
   {
     id: 1,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    recipient: "Esto Safari Dreams Limited",
     date: "Sun,09, Aug 2026, 10:15 AM",
     subject: "Accommodation Booking Inquiry",
     avatar: "V",
@@ -53,9 +52,8 @@ const messages = [
   },
   {
     id: 2,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    recipient: "Victoria",
     date: "Sun,09, Aug 2026, 11:30 AM",
     subject: "Re: Accommodation Booking Inquiry",
     avatar: "E",
@@ -89,9 +87,9 @@ const messages = [
   },
   {
     id: 3,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    
+    recipient: "Esto Safari Dreams Limited",
     date: "Sun,09, Aug 2026, 12:45 PM",
     subject: "Re: Accommodation Details",
     avatar: "V",
@@ -123,9 +121,9 @@ const messages = [
   },
   {
     id: 4,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    
+    recipient: "Victoria",
     date: "Mon,10, Aug 2026, 09:00 AM",
     subject: "Re: Proposed Travel Arrangements",
     avatar: "E",
@@ -167,9 +165,9 @@ const messages = [
   },
   {
     id: 5,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    
+    recipient: "Victoria",
     date: "Tue,11, Aug 2026, 02:00 PM",
     subject: "Booking Payment Reference",
     avatar: "E",
@@ -215,9 +213,8 @@ const messages = [
   },
   {
     id: 6,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    recipient: "Esto Safari Dreams Limited",
     date: "Wed,12, Aug 2026, 03:15 PM",
     subject: "Re: Accommodation Booking",
     avatar: "V",
@@ -248,9 +245,9 @@ const messages = [
   },
   {
     id: 7,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    
+    recipient: "Victoria",
     date: "Wed,12, Aug 2026, 04:30 PM",
     subject: "Re: Accommodation Booking – Further Details",
     avatar: "E",
@@ -283,9 +280,9 @@ const messages = [
   },
   {
     id: 8,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    
+    recipient: "Esto Safari Dreams Limited",
     date: "Wed,12, Aug 2026, 05:45 PM",
     subject: "Re: Accommodation Booking – Further Details",
     avatar: "V",
@@ -314,9 +311,9 @@ const messages = [
   },
   {
     id: 9,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    
+    recipient: "Victoria",
     date: "Wed,12, Aug 2026, 06:00 PM",
     subject: "Re: Accommodation Address and Check-In",
     avatar: "E",
@@ -347,9 +344,9 @@ const messages = [
   },
   {
     id: 10,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    
+    recipient: "Esto Safari Dreams Limited",
     date: "Wed,12, Aug 2026, 06:15 PM",
     subject: "Re: Itinerary Review",
     avatar: "V",
@@ -379,9 +376,9 @@ const messages = [
   },
   {
     id: 11,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    
+    recipient: "Victoria",
     date: "Wed,12, Aug 2026, 06:30 PM",
     subject: "Re: Itinerary Review",
     avatar: "E",
@@ -417,9 +414,9 @@ const messages = [
   },
   {
     id: 12,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    
+    recipient: "Esto Safari Dreams Limited",
     date: "Wed,12, Aug 2026, 06:45 PM",
     subject: "Re: Final Accommodation Details",
     avatar: "V",
@@ -453,9 +450,9 @@ const messages = [
   },
   {
     id: 13,
-    sender: "Esto Safari Dreams Reservations",
-    email: "",
-    recipient: "Victoria Madail Perez",
+    sender: "Esto Safari Dreams Limited",
+    
+    recipient: "Victoria",
     date: "Wed,12, Aug 2026, 07:00 PM",
     subject: "Re: Final Accommodation Details",
     avatar: "E",
@@ -487,9 +484,9 @@ const messages = [
   },
   {
     id: 14,
-    sender: "Victoria Madail Perez",
-    email: "victoriamadailp@gmail.com",
-    recipient: "Esto Safari Dreams Reservations",
+    sender: "Victoria",
+    
+    recipient: "Esto Safari Dreams Limited",
     date: "Wed,12, Aug 2026, 07:00 PM",
     subject: "Re: Accommodation Booking – Follow-Up",
     avatar: "V",
@@ -722,7 +719,7 @@ const Conversation = () => {
                               <span className="detail-value">
                                 {message.email
                                   ? message.email.split("@")[1]
-                                  : "Not provided"}
+                                  : "estosafaridreams@gmaiil.com"}
                               </span>
                             </div>
                           </div>
